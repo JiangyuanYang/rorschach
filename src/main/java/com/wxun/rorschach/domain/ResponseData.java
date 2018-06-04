@@ -1,4 +1,4 @@
-package com.wxun.rorschach.config;
+package com.wxun.rorschach.domain;
 
 import lombok.Data;
 
@@ -12,10 +12,4 @@ public class ResponseData {
 	private int code;
 	private String message;
 	private Object data;
-	private Inner inner;
-
-	@Data
-	public static class Inner{
-		private String nam;
-	}
 }
