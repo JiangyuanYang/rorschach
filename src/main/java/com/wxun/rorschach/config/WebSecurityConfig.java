@@ -9,10 +9,5 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 @Configuration
 public class WebSecurityConfig implements WebMvcConfigurer {
-	/**
-	 * 登录session key
-	 */
-	public final static String SESSION_KEY = "rorschach";
-
 
 }

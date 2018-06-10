@@ -6,10 +6,32 @@ spring:
     throw-exception-if-no-handler-found: false
   thymeleaf:
     cache: false
-  security:
-    user:
-      name: admin
-      password: admin
-    filter:
-      dispatcher-types:
+
+  datasource:
+    # hikari
+    hikari:
+      auto-commit: true
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: oracle:thin:@172.19.3.45:1521:dev
+    username: prod
+    password: prod
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.wxun.rorschach.model
+  configuration:
+    aggressive-lazy-loading: false
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    lazy-loading-enabled: false
+    multiple-result-sets-enabled: true
+    use-column-label: true
+    use-generated-keys: true
+    auto-mapping-behavior: full
+    default-executor-type: simple
+    cache-enabled: false
+    local-cache-scope: statement
+    map-underscore-to-camel-case: true
+
+
 

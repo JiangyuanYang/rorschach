@@ -1,4 +1,4 @@
-package com.wxun.rorschach.domain;
+package com.wxun.rorschach.model;
 
 import lombok.Data;
 
