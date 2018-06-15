@@ -7,6 +7,10 @@
     <artifactId>rorschach</artifactId>
     <version>1.0.0-RELEASE</version>
     <inceptionYear>2008</inceptionYear>
+    <modules>
+        <module>proxy</module>
+    </modules>
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
