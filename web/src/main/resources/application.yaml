@@ -12,17 +12,25 @@ spring:
     hikari:
       auto-commit: true
     type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: oracle.jdbc.OracleDriver
-    url: oracle:thin:@172.19.3.45:1521:dev
-    username: prod
-    password: prod
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://132.232.101.202:3306/dev?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    username: wxun
+    password: wxun
+  #整合redis
+  redis:
+    host: 132.232.101.202
+    port: 6379
+    #使用lettuce连接池，基于netty
+    lettuce:
+      pool:
+        max-idle: 20
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.wxun.rorschach.model
+  type-aliases-package: com.wxun.web.model
   configuration:
     aggressive-lazy-loading: false
-    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     lazy-loading-enabled: false
     multiple-result-sets-enabled: true
     use-column-label: true

@@ -1,4 +1,4 @@
-package com.wxun.rorschach.config;
+package com.wxun.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +22,7 @@ public class Swagger2Config {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(apiInfo())
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.wxun.rorschach.controller"))
+				.apis(RequestHandlerSelectors.basePackage("com.wxun.web.controller"))
 				.paths(PathSelectors.any())
 				.build();
 	}
@@ -31,8 +31,8 @@ public class Swagger2Config {
 		return new ApiInfoBuilder()
 				.title("Spring Boot中使用Swagger2构建RESTful APIs")
 				.description("基于springBoot的整合开发")
-				.termsOfServiceUrl("http://blog.didispace.com/")
-				.contact("Wxun")
+				.termsOfServiceUrl("---.---.---")
+				.contact("wxun")
 				.version("1.0")
 				.build();
 	}

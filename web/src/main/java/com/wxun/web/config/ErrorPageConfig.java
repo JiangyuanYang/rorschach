@@ -1,4 +1,4 @@
-package com.wxun.rorschach.config;
+package com.wxun.web.config;
 
 import org.springframework.boot.web.server.ErrorPage;
 import org.springframework.boot.web.server.ErrorPageRegistrar;

@@ -16,9 +16,11 @@
 .idea
 *.iws
 *.iml
+mvnw
+mvnw.cmd
 *.ipr
 /out/
-
+**/target
 ### NetBeans ###
 /nbproject/private/
 #/build/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wxun.web.dao.UserMapper">
+
+    <select id="getAllUsers" resultType="com.wxun.web.model.UserPO">
+        select
+            pk_user_id,
+            username,
+            password
+        from users
+    </select>
+</mapper>

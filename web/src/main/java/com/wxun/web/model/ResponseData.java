@@ -1,4 +1,4 @@
-package com.wxun.rorschach.model;
+package com.wxun.web.model;
 
 import lombok.Data;
 
@@ -7,12 +7,9 @@ import lombok.Data;
  * @since 2018-05-29 13:08
  */
 @Data
-public class ResponseData {
+public class ResponseData<T> {
 	private boolean status;
 	private int code;
 	private String message;
-	private Object data;
-
-	public static void main(String[] args) {
-	}
+	private T data;
 }

@@ -1,6 +1,5 @@
 /target/
 .mvn/
-
 ### STS ###
 .apt_generated
 .classpath
